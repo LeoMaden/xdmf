@@ -68,5 +68,5 @@ for i, t in enumerate(times):
 
 ### How do I use data from a HDF5 file?
 
-To reference data that lives in a HDF5 file, use a `DataItem` with `format = Format.HDF` and then set its text to `name.hdf5/array_name` using `add_text`. To see what arrays are inside a HDF5 file, you can use `h5ls name.hdf5`.
+To reference data that lives in a HDF5 file, use a `DataItem` with `format = Format.HDF` and then set its text to `name.hdf5:/array_name` using `add_text`. To see what arrays are inside a HDF5 file, you can use `h5ls name.hdf5`.
 
