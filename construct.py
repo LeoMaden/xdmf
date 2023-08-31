@@ -7,7 +7,6 @@ from .geometry import Geometry
 from .grid import Grid, GridType, CollectionType, Section
 from .time import Time, TimeType
 from .topology import Topology, TopologyType
-from typing import Iterable
 
 def add_text(elt: ET.Element, s: str):
     """Add the string `s` inside the XML element `elt`
@@ -143,8 +142,3 @@ def write_tree(root: ET.Element, filename: str):
     """
     tree = ET.ElementTree(root)
     tree.write(filename)
-
-def array_string(a: Iterable):
-    """Returns the elements of `a` in a string separated by spaces
-    """
-    return " ".join(map(str, a))
